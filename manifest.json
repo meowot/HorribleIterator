@@ -1,0 +1,30 @@
+{
+    "name": "HorribleIterator",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "Clicks all 1080p magnet links on horriblesubs.info  ",
+    "content_scripts": [{
+        "matches": [
+            "*://horriblesubs.info/*"
+        ],
+        "all_frames": true,
+        "js": [
+            "content.js"
+        ]
+
+    }],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "popup/index.html"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "<all_urls>"
+    ]
+}
