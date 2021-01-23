@@ -5,7 +5,7 @@
     "description": "Clicks all 1080p magnet links on horriblesubs.info",
     "content_scripts": [{
         "matches": [
-            "*://horriblesubs.info/*"
+            "*://subsplease.org/*"
         ],
         "all_frames": true,
         "js": [
